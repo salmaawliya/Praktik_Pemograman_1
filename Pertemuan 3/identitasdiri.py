@@ -14,5 +14,5 @@ print("Angkatan         : " + str(angkatan))
 print("Program Studi    : " + programStudi)
 print("Jurusan          : " + jurusan)
 print("Fakultas         : " + fakultas)
-print("IPK Harapan      : " + str(ipkHarapan))
+print("IPK Harapan      : Diatas " + str(ipkHarapan))
 
