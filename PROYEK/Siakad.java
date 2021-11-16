@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
 public class Siakad {
-    private String[] nama = new String[1000];
-    private double[] ipk = new double[1000];
+    Mahasiswa[] mahasiswa = new Mahasiswa[1000];
     private int jumlahData = 0;
 
     public static void main(String[] args) {
@@ -40,11 +39,18 @@ public class Siakad {
     private void menambahData() {
         System.out.println("Disini untuk Menambah Data");
 
+        Mahasiswa inputMahasiswa = new Mahasiswa();
         Scanner scan = new Scanner(System.in);
+        System.out.print("Masukkan NIM Mahasiswa = ");
+        String nim = scan.nextLine();
+        inputMahasiswa.setNIM(nim);
         System.out.print("Masukkan Nama Mahasiswa = ");
-        nama[jumlahData] = scan.nextLine();
+        String nama = scan.nextLine();
+        inputMahasiswa.setNama(nama);
         System.out.print("Masukkan IPK Mahasiswa = ");
-        ipk[jumlahData] = scan.nextDouble();
+        double ipk = scan.nextDouble();
+        inputMahasiswa.setIPK(ipk);
+        mahasiswa[jumlahData] = inputMahasiswa;
         jumlahData++;
         melihatData();
     }
@@ -56,7 +62,7 @@ public class Siakad {
             System.out.println();
             System.out.println("Berikut Data Mahasiswa");
             for (int i = 0; i < jumlahData; i++) {
-                System.out.println(nama[i] + "   " + ipk[i]);
+                System.out.println(mahasiswa[i].getNama() + "   " + mahasiswa[i].getNIM() + "  " + mahasiswa[i].getIPK() );
             }
             rerataIPK();
         }
@@ -73,7 +79,7 @@ public class Siakad {
     public void rerataIPK() {
         double total = 0;
         for (int i = 0; i < jumlahData; i++) {
-            total += ipk[i];
+            total += mahasiswa[i].getIPK();
         }
         double rerata = total/jumlahData; 
         System.out.println();
