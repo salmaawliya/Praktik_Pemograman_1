@@ -1,7 +1,17 @@
-public class Mahasiswa {
+public class Mahasiswa extends Manusia{
     private String nama;
     private String nim;
     private double ipk;
+
+    public Mahasiswa(String nama, String nim, double ipk) {
+        this.nama = nama;
+        this.nim = nim;
+        this.ipk= ipk;
+    }
+
+    public void getData() {
+        System.out.println(this.nama + " " + this.nim + " " + this.ipk + " " + this.tinggiBadan);
+    }
 
     public void setNama(String nama) {
         this.nama = nama;
