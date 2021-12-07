@@ -2,15 +2,20 @@ public class Mahasiswa extends Manusia{
     private String nama;
     private String nim;
     private double ipk;
+    private int sem;
 
-    public Mahasiswa(String nama, String nim, double ipk) {
+    public Mahasiswa(String nama, String nim, double ipk, int sem) {
         this.nama = nama;
         this.nim = nim;
-        this.ipk= ipk;
+        this.ipk = ipk;
+        this.sem = sem;
     }
 
     public void getData() {
-        System.out.println(this.nama + " " + this.nim + " " + this.ipk + " " + this.tinggiBadan);
+        System.out.println();
+        System.out.println("Nama\t\t\tNIM\t\t\tIPK\t\tTinggi Badan\t\tBerat Badan\t\tSemester");
+        System.out.println("------------------------------------------------------------------------------------------------------------------------");
+        System.out.println(this.nama + "\t\t\t" + this.nim + "\t\t\t" + this.ipk + "\t\t" + this.tinggiBadan + "\t\t\t" + this.beratBadan + "\t\t\t" + this.sem);
     }
 
     public void setNama(String nama) {
@@ -32,5 +37,12 @@ public class Mahasiswa extends Manusia{
     }
     public double getIPK() {
         return this.ipk;
+    }
+
+    public void setSem(int sem) {
+        this.sem = sem;
+    }
+    public int getSem() {
+        return this.sem;
     }
 }
