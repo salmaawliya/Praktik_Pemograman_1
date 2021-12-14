@@ -73,6 +73,9 @@ public class Siakad {
         } else {
             System.out.println();
             System.out.println("Berikut Data Mahasiswa");
+            System.out.println();
+            System.out.println("Nama\t\t\tNIM\t\t\tIPK\t\tTinggi Badan\t\tBerat Badan\t\tSemester");
+            System.out.println("------------------------------------------------------------------------------------------------------------------------");
             for (int i = 0; i < jumlahData; i++) {
                 mahasiswa[i].getData();
             }
@@ -93,6 +96,8 @@ public class Siakad {
         } else {
             System.out.println();
             System.out.println("Berikut Data yang Anda Cari");
+            System.out.println("Nama\t\t\tNIM\t\t\tIPK\t\tTinggi Badan\t\tBerat Badan\t\tSemester");
+            System.out.println("------------------------------------------------------------------------------------------------------------------------");
             mahasiswa[index].getData();
         }
     }
@@ -138,6 +143,8 @@ public class Siakad {
         } else {
             System.out.println();
             System.out.println("Berikut Data Mahasiswa");
+            System.out.println("Nama\t\t\tNIM\t\t\tIPK\t\tTinggi Badan\t\tBerat Badan\t\tSemester");
+            System.out.println("------------------------------------------------------------------------------------------------------------------------");
             mahasiswa[index].getData();
             System.out.println();
             System.out.print("Masukan Nama Mahasiswa yang Baru = ");
@@ -160,6 +167,8 @@ public class Siakad {
             mahasiswa[index].setSem(sem);
             System.out.println();
             System.out.println("Berikut Data Mahasiswa yang Baru");
+            System.out.println("Nama\t\t\tNIM\t\t\tIPK\t\tTinggi Badan\t\tBerat Badan\t\tSemester");
+            System.out.println("------------------------------------------------------------------------------------------------------------------------");
             mahasiswa[index].getData();
         }
     }

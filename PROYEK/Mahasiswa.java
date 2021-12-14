@@ -12,9 +12,6 @@ public class Mahasiswa extends Manusia{
     }
 
     public void getData() {
-        System.out.println();
-        System.out.println("Nama\t\t\tNIM\t\t\tIPK\t\tTinggi Badan\t\tBerat Badan\t\tSemester");
-        System.out.println("------------------------------------------------------------------------------------------------------------------------");
         System.out.println(this.nama + "\t\t\t" + this.nim + "\t\t\t" + this.ipk + "\t\t" + this.tinggiBadan + "\t\t\t" + this.beratBadan + "\t\t\t" + this.sem);
     }
 
